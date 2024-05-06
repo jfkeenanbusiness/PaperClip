@@ -108,12 +108,12 @@ background-color: white;
   line-height: 50%;
 }
 
-img {
+/* img {
   mix-blend-mode: multiply;
   width:33%;
   height: auto;
   padding: 2%;
-}
+} */
 
 .sub {font-size: 3em;
  text-decoration: underline ; 
@@ -186,8 +186,8 @@ body {
   padding: 0 1rem;
 }
 .wiper-item {
-  width: 300px;
-  height: px;
+  width: 18.75rem;
+  height: auto;
   position: relative;
   transition: scale 0.2s linear;
 
@@ -198,7 +198,7 @@ body {
   object-fit:cover;
 }
 .wiper {
-  max-width: 960px;
+  max-width: 1200px;
   position: relative;
   margin: 0 auto;
 }
