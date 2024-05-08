@@ -20,11 +20,11 @@ const arrowsBehaviour = (wipePrevBtn, wipeNextBtn, index) => {
 
 const wipeSlide = (wiperTrack, activeSlide, nextSlide, targetIndex) => {
   wiperTrack.style.transform =
-    "translateX(-" + (wipeWidth + 28) * (targetIndex - 1) + "px)";
+    "translateX(-" + (wipeWidth + 30) * (targetIndex - 1) + "px)";
   activeSlide.classList.remove("active-swipe");
   activeSlide.style.transform = "scale(1)";
   nextSlide.classList.add("active-swipe");
-  nextSlide.style.transform = "scale(1.1)";
+  nextSlide.style.transform = "scale(1)";
 };
 
 wipeNextBtn.addEventListener("click", (e) => {

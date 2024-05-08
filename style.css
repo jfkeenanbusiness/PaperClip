@@ -30,14 +30,17 @@ html, body {
     padding: 2%;
   }
   p  {
+    /* text-align: justify;                                           */
+    /* hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
     font-family: "Runish" ;
     
     color: #201e14;
     /* color: white; */
-    font-size: 2.5em;
+    font-size: 3em;
     opacity: 90%;
     /* letter-spacing: 2pt; */
-    line-height: 200%;
+    line-height: 150%;
+    padding: 0, 10%;
   }
 
 
@@ -191,20 +194,33 @@ body {
   position: relative;
   transition: scale 0.2s linear;
 
+
 }
 .wiper-button img {
   height: 100%;
   width: 100%;
   object-fit:cover;
+ 
 }
 .wiper {
   max-width: 1200px;
   position: relative;
   margin: 0 auto;
+
+  /* padding-top: 120px; */
+
 }
 .active-swipe {
-  transform: scale(1.1);
+  transform: scale(1);
 }
+
+
+li.wiper-item.active-swipe {
+  transform: scale(1);
+  /* box-shadow: 5px 5px 30px#000000; */
+}
+
+
 .wiper-button {
   margin: 0 1rem;
   height: 70px;
@@ -219,6 +235,7 @@ body {
 .wiper-button__left {
   right: 0;
   transform: translateY(-50%) rotate(180deg);
+ 
 }
 .wiper__image-button {
   right: 50%;
@@ -233,7 +250,7 @@ body {
   cursor: pointer;
 }
 .wiper-wrapper {
-  max-width: 660px;
+  max-width: 630px;
   overflow: hidden;
   padding: 2rem 0.5rem;
   margin: 0 auto;
@@ -249,6 +266,7 @@ body {
   font-size: 1rem;
   transform: translateY(-50%) translateX(50%);
   cursor: pointer;
+  
 }
 .swiper__image-button:hover {
   color: red;
@@ -258,6 +276,7 @@ body {
   width:100%;
   object-fit: cover;
   border-radius:30px;
+  box-shadow: 0px  3px 10px#000000;
 }
 .is-hidden{
   display:none;
@@ -293,5 +312,26 @@ img#logo {
   height: 8%;
   width: auto;
 
-  opacity: 10%;
+  opacity: 5%;
+}
+
+/* img.wiper_image {
+  text-shadow: 20px 20px 40px #000000;
+} */
+
+li.wiper-item.active-swipe {
+  transform: scale(1);
+}
+
+span {
+      /* text-align: justify;                                           */
+    /* hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+    font-family: "Runish" ;
+    color: #ff232a;
+    /* color: white; */
+    /* font-size: 3em; */
+    opacity: 90%;
+    /* letter-spacing: 2pt; */
+    line-height: 150%;
+    padding: 0, 10%;
 }
